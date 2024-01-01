@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* circular prgressbar */
+#container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: rgb(220, 255, 254);
+
+}
+#circle {
+    width: 300px;
+    height: 300px;
+    background-color: #DBD8E3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+#inner {
+    width: 250px;
+    height: 250px;
+    background-color: rgb(220, 255, 254);
+    box-shadow: inset -3px -3px 7px #ffffff,
+        inset 3px 3px 5px rgba(94, 104, 121, 0.692);
+    border-radius: 50%;
+    color: #2A2438;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#spinner {
+    width: 300px;
+    height: 300px;
+    background: conic-gradient(#5F0F40 0deg, rgb(233, 233, 233) 0);
+    border-radius: 50%;
+    box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, 0.945);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* plane progressbar */
+#plane {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#progress {
+    width: 300px;
+    height: 40px;
+    background-color: white;
+    box-shadow: inset 3px 3px 4px rgb(173, 173, 173),
+        inset -3px -3px 4px rgb(173, 173, 173);
+    border-radius: 10px;
+}
+#bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: inset 2px 2px 4px rgb(173, 173, 173),
+        inset -2px -2px 4px rgb(173, 173, 173);
+    width: 0%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(17, 138, 146);
+    font-size: 20px;
+}
+#text {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 66, 78);
+    display: none;
+}
+button {
+    padding: 10px 35px;
+    color: #DBD8E3;
+    border: none;
+    font-size: 20px;
+    border-radius: 7px;
+    background-color: rgb(17, 138, 146);
+}
